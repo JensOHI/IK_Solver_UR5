@@ -44,7 +44,7 @@ theta5_ = zeros(4,1);
 idx = 1;
 for i = 1:length(theta1_)
     acosValue = (P06(1)*sin(theta1_(i)) - P06(2)*cos(theta1_(i)) - d(4))/d(6);
-    if acosValue > 1
+    if acosValue > 1 %If this happens all the time, maybe just set theta5 to zero.
         error('Theta5 can not be detemined. Value inside acos is above 1 and the solution is therefore not valied.')
     end
     for sign = [1 -1]
@@ -204,7 +204,7 @@ conditions = [abs(a(2)-a(3));
 
 if P14_xz_length > conditions(1) && P14_xz_length < conditions(2)
    theta3 = acos((P14_xz_length^2 - a(2)^2 -a(3)^2)/(2*a(2)*a(3)));
-else
+else %If this happens all the time, maybe just set theta3 to zero.
     error('Theta3 can not be determined. Conditions are not uphold. P14_xz_length is exceding the condidtions.')
 end
 end

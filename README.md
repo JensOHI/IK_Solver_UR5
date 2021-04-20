@@ -1,7 +1,7 @@
 # Inverse Kinematics Solver for a UR Robot (MATLAB/SIMULINK).
-This is a **Inverse Kinematics Solver** for a UR robot. 
+This is a **Inverse Kinematics Solver** for a UR robot and is based on the paper [Kinematics of a UR5](http://rasmusan.blog.aau.dk/files/ur5_kinematics.pdf) by Rasmus Skovgaard Andersen. 
 
-The implemented DH parameters are for the UR5 robot, but kan easily be changed to other DH parameters for another UR robot (this has not been tested). The [DH parameter](https://www.universal-robots.com/articles/ur/application-installation/dh-parameters-for-calculations-of-kinematics-and-dynamics) used.
+The implemented DH parameters are for the UR5 robot, but can easily be changed to other DH parameters for another UR robot (this has not been tested). The [DH parameter](https://www.universal-robots.com/articles/ur/application-installation/dh-parameters-for-calculations-of-kinematics-and-dynamics) used.
 
 Three inputs are given to the function:
 - **Position** (pos): is a vector containing the desired x-, y-, and z-coordinate for the end-effector.
